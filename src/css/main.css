@@ -6,7 +6,7 @@ html, body, #cesiumContainer {
     overflow: hidden;
     font-family: sans-serif;
     color: #edffff;
-    background-color: black;
+    background:none transparent;
 }
 
 [v-cloak] {

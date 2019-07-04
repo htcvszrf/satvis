@@ -26,7 +26,15 @@ export class CesiumController {
       selectionIndicator: false,
       timeline: !this.minimalUI,
       vrButton: !this.minimalUI,
+      skyBox: false,
+      skyAtmosphere: false,
+      contextOptions: {
+        webgl: {
+          alpha: true
+        },
+      },
     });
+    this.viewer.scene.backgroundColor = Cesium.Color.TRANSPARENT;
 
     // Cesium default settings
     this.viewer.clock.shouldAnimate = true;
